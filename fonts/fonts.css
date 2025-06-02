@@ -1,0 +1,7 @@
+/* Arabic 3alamecom font*/
+@font-face {
+  font-family: "3alamecom-light";
+  src: url("./3alamecom-light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
