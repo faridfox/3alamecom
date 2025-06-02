@@ -1,24 +1,17 @@
-/* Arabic 3alamecom font*/
+/* ─── 1. @font-face ─────────────────────────────────────────────────────────────── */
 @font-face {
-  font-family: '3alamecom-light';
+  font-family: "3alamecom-light";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('./3alamecom-light.woff2') format("woff2");
+  /* Point directly to the .woff2 file on jsDelivr: */
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2")
+    format("woff2");
+  /* Optional: limit this file to Arabic glyphs (U+0600–U+06FF) */
+  unicode-range: U+0600-06FF;
 }
 
-/* Styles for the Arabic 3alamecom font */
-.font-default {
-  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
-}
-main {
-  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
+/* ─── 2. Apply as the global default ───────────────────────────────────────────── */
+body {
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
 }
