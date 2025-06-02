@@ -16,7 +16,7 @@ var mySwiper = new Swiper(".swiper-container1", {
   loop: true,
   speed: 9000,
   autoplay: {
-    delay: 1,
+    delay: 2,
   },
   slidesPerView: "auto",
   allowTouchMove: false,
