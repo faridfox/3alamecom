@@ -22,3 +22,15 @@ var mySwiper = new Swiper(".swiper-container1", {
   allowTouchMove: false,
   disableOnInteraction: true,
 });
+
+let SwiperTop = new Swiper(".swiper--top", {
+  spaceBetween: 32,
+  speed: 8000,
+  autoplay: {
+    delay: 1,
+  },
+  loop: true,
+  slidesPerView: 3.5,
+  allowTouchMove: false,
+  disableOnInteraction: true,
+});
