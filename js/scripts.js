@@ -24,6 +24,7 @@ var mySwiper = new Swiper(".swiper-container1", {
 });
 
 let SwiperTop = new Swiper(".swiper--top", {
+  direction: "horizontal",
   spaceBetween: 32,
   speed: 8000,
   autoplay: {
