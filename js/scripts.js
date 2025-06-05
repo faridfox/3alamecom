@@ -35,3 +35,26 @@ let SwiperTop = new Swiper(".swiper--top", {
   allowTouchMove: false,
   disableOnInteraction: true,
 });
+
+// Initialize Swiper for "Product hero section with carousel"
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+});
