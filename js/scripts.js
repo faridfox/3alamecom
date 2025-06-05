@@ -1,5 +1,5 @@
-// Initialize Swiper for "Hero section with vertical carousel"
-var mySwiper = new Swiper(".swiper-container", {
+// — Vertical Block #1 (vertical-one) —
+var verticalOneSwiper = new Swiper(".vertical-one", {
   direction: "vertical",
   loop: true,
   centeredSlides: true,
@@ -11,7 +11,9 @@ var mySwiper = new Swiper(".swiper-container", {
   allowTouchMove: false,
   disableOnInteraction: true,
 });
-var mySwiper = new Swiper(".swiper-container1", {
+
+// — Vertical Block #2 (vertical-two) —
+var verticalTwoSwiper = new Swiper(".vertical-two", {
   direction: "vertical",
   loop: true,
   speed: 9000,
@@ -23,8 +25,8 @@ var mySwiper = new Swiper(".swiper-container1", {
   disableOnInteraction: true,
 });
 
-// Initialize Swiper for "Hero section with statistics carousel"
-let SwiperTop = new Swiper(".swiper--top", {
+// — Statistics Block (stats-carousel) —
+var statsSwiper = new Swiper(".stats-carousel", {
   spaceBetween: 32,
   speed: 8000,
   autoplay: {
@@ -34,10 +36,11 @@ let SwiperTop = new Swiper(".swiper--top", {
   slidesPerView: 3.5,
   allowTouchMove: false,
   disableOnInteraction: true,
+  /* Note: We aren’t using default Swiper pagination/navigation here, so we don’t set them. If you ever add bullets/arrows, give them their own selectors. */
 });
 
-// Initialize Swiper for "Product hero section with carousel"
-var swiper = new Swiper(".mySwiper", {
+// — Product Hero Block (product-hero) —
+var productHeroSwiper = new Swiper(".product-hero", {
   loop: true,
   slidesPerView: 1,
   centeredSlides: false,
@@ -47,14 +50,19 @@ var swiper = new Swiper(".mySwiper", {
     enabled: true,
   },
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".product-scrollbar",
+    dragClass: "product-scrollbar-drag"
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".product-button-next",
+    prevEl: ".product-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".product-pagination",
     type: "fraction",
+    bulletClass: "product-pagination-bullet",
+    bulletActiveClass: "product-pagination-bullet-active",
+    currentClass: "product-pagination-current",
+    totalClass: "product-pagination-total"
   },
 });
