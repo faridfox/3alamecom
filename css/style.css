@@ -1,6 +1,5 @@
 /* PD styles */
-/* This file is part of the Swiper project. It is used to style the Swiper components. */
-/* Swiper styles */
+/* Swiper styles for "Hero section with vertical carousel" */
 .verticle-animation .swiper-slide {
   display: flex;
   justify-content: flex-end;
@@ -27,6 +26,22 @@
 
   background: rgba(255, 255, 255, 0.5);
 }
+/* */
+/* Swiper styles for "Hero section with statistics carousel" */
+.swiper-slide {
+  width: max-content !important;
+  margin-right: 32px;
+}
+
+.swiper-wrapper {
+  height: 300px;
+}
+
+/*.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}*/
 /* */
 /* Avatar styles */
 .avatar-item {
