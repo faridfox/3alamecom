@@ -12,3 +12,6 @@
 body, main, h1, h2, h3, h4, h5, h6 {
   font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
 }
+.font-default {
+  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
+}
