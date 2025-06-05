@@ -1,5 +1,5 @@
-// — Vertical Block #1 (vertical-one) —
-var verticalOneSwiper = new Swiper(".vertical-one", {
+// Initialize Swiper for "Hero section with vertical carousel"
+var mySwiper = new Swiper(".swiper-container", {
   direction: "vertical",
   loop: true,
   centeredSlides: true,
@@ -11,9 +11,7 @@ var verticalOneSwiper = new Swiper(".vertical-one", {
   allowTouchMove: false,
   disableOnInteraction: true,
 });
-
-// — Vertical Block #2 (vertical-two) —
-var verticalTwoSwiper = new Swiper(".vertical-two", {
+var mySwiper = new Swiper(".swiper-container1", {
   direction: "vertical",
   loop: true,
   speed: 9000,
@@ -25,8 +23,8 @@ var verticalTwoSwiper = new Swiper(".vertical-two", {
   disableOnInteraction: true,
 });
 
-// — Statistics Block (stats-carousel) —
-var statsSwiper = new Swiper(".stats-carousel", {
+// Initialize Swiper for "Hero section with statistics carousel"
+let SwiperTop = new Swiper(".swiper--top", {
   spaceBetween: 32,
   speed: 8000,
   autoplay: {
@@ -36,11 +34,10 @@ var statsSwiper = new Swiper(".stats-carousel", {
   slidesPerView: 3.5,
   allowTouchMove: false,
   disableOnInteraction: true,
-  /* Note: We aren’t using default Swiper pagination/navigation here, so we don’t set them. If you ever add bullets/arrows, give them their own selectors. */
 });
 
-// — Product Hero Block (product-hero) —
-var productHeroSwiper = new Swiper(".product-hero", {
+// Initialize Swiper for "Product hero section with carousel"
+var swiper = new Swiper(".mySwiper", {
   loop: true,
   slidesPerView: 1,
   centeredSlides: false,
@@ -50,19 +47,14 @@ var productHeroSwiper = new Swiper(".product-hero", {
     enabled: true,
   },
   scrollbar: {
-    el: ".product-scrollbar",
-    dragClass: "product-scrollbar-drag"
+    el: ".swiper-scrollbar",
   },
   navigation: {
-    nextEl: ".product-button-next",
-    prevEl: ".product-button-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".product-pagination",
+    el: ".swiper-pagination",
     type: "fraction",
-    bulletClass: "product-pagination-bullet",
-    bulletActiveClass: "product-pagination-bullet-active",
-    currentClass: "product-pagination-current",
-    totalClass: "product-pagination-total"
   },
 });

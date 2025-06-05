@@ -1,111 +1,131 @@
-/*── Vertical Block #1: “vertical-one” ──────────────────────────────────*/
-.vertical-one {
-  width: 100%;
-  height: 310px;        /* same as before */
-}
-.vertical-one-wrapper {
-  transition-timing-function: linear !important;
-  position: relative;
-}
-.vertical-one-slide {
+/* PD styles */
+/* Swiper styles for "Hero section with vertical carousel" */
+.verticle-animation .swiper-slide {
   display: flex;
   justify-content: flex-end;
   width: 200px;
   height: 310px;
 }
-
-/*── Vertical Block #2: “vertical-two” ──────────────────────────────────*/
-.vertical-two {
+.swiper-container {
   width: 100%;
   height: 310px;
 }
-.vertical-two-wrapper {
-  transition-timing-function: linear !important;
-  position: relative;
-}
-.vertical-two-slide {
-  display: flex;
-  justify-content: flex-end;
-  width: 200px;
+.swiper-container1 {
+  width: 100%;
   height: 310px;
 }
-
-/*── Statistics Block: “stats-carousel” ──────────────────────────────────*/
-.stats-carousel {
-  /* no fixed width/height; it will wrap content */
-}
-.stats-wrapper {
-  display: flex;            /* horizontal flex of all slides */
-  height: 300px;            /* same as your old .swiper-wrapper height */
-  gap: 32px;                /* spaceBetween: 32px */
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
   position: relative;
 }
-.stats-slide {
-  width: max-content;       /* same as .swiper-slide { width: max-content } */
-  /* margin-right: 32px can be replaced by gap above */
+.inner {
+  /* this is where the (webkit) magic happens */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+
+  background: rgba(255, 255, 255, 0.5);
 }
 
-/*── Product Hero Block: “product-hero” ────────────────────────────────*/
-.product-hero {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.product-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-  /* no fixed height, we'll let each .product-slide set its own min-height */
-}
-.product-slide {
-  width: 100%;
-  /* no need for height: max-content—it will size by its own content/background */
+/* Swiper styles for "Hero section with statistics carousel" */
+.swiper-slide {
+  width: max-content !important;
+  margin-right: 32px;
 }
 
-/* Scrollbar for Product Hero */
-.product-scrollbar {
-  width: 196px;   /* same as your old swiper-horizontal scrollbar width */
+.swiper-wrapper {
+  height: 300px;
+}
+
+/*.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}*/
+
+/* Swiper styles for "Product hero section with carousel" */
+.swiper-wrapper {
+  height: max-content !important;
+  padding-bottom: 56px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  width: 196px !important;
   height: 2px;
   background-color: #d1d5db;
   bottom: 21px;
 }
 @media (max-width: 1003px) {
-  .product-scrollbar {
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
     bottom: 0px;
     margin-bottom: 10px;
   }
 }
-
-/* Overwrite default swiper-button pseudo-elements (since we’re not using them) */
-.product-button-prev:after,
-.product-button-next:after {
-  content: "";
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: " ";
 }
-
-/* Custom drag handle color for scrollbar */
-.product-scrollbar-drag {
+.swiper-scrollbar-drag {
   width: 56px !important;
   background: #818cf8;
 }
-
-/* Pagination styling */
-.product-pagination {
-  color: #9ca3af;  /* your “Colors-Prime-Gray-400” */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, px);
+  z-index: 10;
+  color: transparent;
+  left: 14px;
+}
+.swiper-pagination {
+  color: var(--Colors-Prime-Gray-Prime-Gray-400, #9ca3af);
   font-family: Manrope;
   font-size: 30px;
+  font-style: normal;
   font-weight: 400;
   line-height: 46px;
   position: absolute;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: end;
+  justify-content: end;
 }
-.product-pagination-current {
+.swiper-pagination-current {
   color: white;
   font-family: Manrope;
   font-size: 48px;
+  font-style: normal;
   font-weight: 600;
   line-height: 62px;
+}
+
+/* Avatar styles */
+.avatar-item {
+  & + .avatar-item {
+    margin-left: -20px;
+  }
+
+  &:first-child {
+    z-index: 5;
+  }
+
+  &:nth-child(2) {
+    z-index: 4;
+  }
+
+  &:nth-child(3) {
+    z-index: 3;
+  }
+
+  &:nth-child(4) {
+    z-index: 2;
+  }
+
+  &:last-child {
+    z-index: 1;
+  }
 }
