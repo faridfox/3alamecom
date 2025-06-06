@@ -4,14 +4,42 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2")
+    format("woff2");
+  unicode-range: U+0600-06FF;
+}
+
+@font-face {
+  font-family: "3alamecom-medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-medium.woff2")
+    format("woff2");
+  unicode-range: U+0600-06FF;
+}
+
+@font-face {
+  font-family: "3alamecom-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-bold.woff2")
+    format("woff2");
   unicode-range: U+0600-06FF;
 }
 
 /* apply 3alamecom font */
-body, main, h1, h2, h3, h4, h5, h6 {
-  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
+body,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
 }
 .font-default {
-  font-family: '3alamecom-light', ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
 }
