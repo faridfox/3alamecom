@@ -43,17 +43,14 @@ h6 {
 }
 .font-default {
   font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
-  font-weight: normal;
+  font-weight: 300;
 }
 .font-normal {
   font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
-  font-weight: normal;
 }
 .font-medium {
   font-family: "3alamecom-medium", ui-sans-serif, system-ui, sans-serif;
-  font-weight: normal;
 }
 .font-bold {
   font-family: "3alamecom-bold", ui-sans-serif, system-ui, sans-serif;
-  font-weight: normal;
 }
