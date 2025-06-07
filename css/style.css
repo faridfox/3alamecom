@@ -65,7 +65,7 @@ body, main, h1, h2, h3, h4, h5, h6 {
 .swiper-button-next,
 .swiper-button-prev {
   position: relative !important;
-  margin-top: 32px;
+  margin-top: 32px !important;
 }
 
 .swiper-slide.swiper-slide-active {
@@ -81,3 +81,4 @@ body, main, h1, h2, h3, h4, h5, h6 {
 .swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
