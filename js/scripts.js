@@ -67,7 +67,7 @@ var productHeroSwiper = new Swiper(".product-hero", {
     totalClass: "product-pagination-total",
   },
 });
-*/
+
 
 // — Testimonial Slider with background image —
 var swiper = new Swiper(".mySwiper", {
@@ -79,5 +79,38 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
+  },
+});
+*/
+
+// — Basic testimonial cards —
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 28,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      centeredSlides: false,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 28,
+      centeredSlides: true,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
   },
 });
