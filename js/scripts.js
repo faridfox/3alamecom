@@ -117,7 +117,7 @@ var swiper = new Swiper(".mySwiper", {
 
 // — Heading and card slider block —
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 28,
   centeredSlides: false,
   loop: true,
