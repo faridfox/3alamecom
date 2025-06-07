@@ -1,3 +1,4 @@
+/*
 // — Vertical Block #1 (vertical-one) —
 var verticalOneSwiper = new Swiper(".vertical-one", {
   direction: "vertical",
@@ -36,7 +37,7 @@ var statsSwiper = new Swiper(".stats-carousel", {
   slidesPerView: 3.5,
   allowTouchMove: false,
   disableOnInteraction: true,
-  /* Note: We aren’t using default Swiper pagination/navigation here, so we don’t set them. If you ever add bullets/arrows, give them their own selectors. */
+  // Note: We aren’t using default Swiper pagination/navigation here, so we don’t set them. If you ever add bullets/arrows, give them their own selectors.
 });
 
 // — Product Hero Block (product-hero) —
@@ -51,7 +52,7 @@ var productHeroSwiper = new Swiper(".product-hero", {
   },
   scrollbar: {
     el: ".product-scrollbar",
-    dragClass: "product-scrollbar-drag"
+    dragClass: "product-scrollbar-drag",
   },
   navigation: {
     nextEl: ".product-button-next",
@@ -63,6 +64,20 @@ var productHeroSwiper = new Swiper(".product-hero", {
     bulletClass: "product-pagination-bullet",
     bulletActiveClass: "product-pagination-bullet-active",
     currentClass: "product-pagination-current",
-    totalClass: "product-pagination-total"
+    totalClass: "product-pagination-total",
+  },
+});
+*/
+
+// — Testimonial Slider with background image —
+var swiper = new Swiper(".mySwiper", {
+  loop: "true",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 });
