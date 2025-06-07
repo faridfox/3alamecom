@@ -1,0 +1,195 @@
+/* 3alamecom font */
+@font-face {
+  font-family: "3alamecom-light";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2") format("woff2");
+  unicode-range: U+0600-06FF;
+}
+
+@font-face {
+  font-family: "3alamecom-medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-medium.woff2") format("woff2");
+  unicode-range: U+0600-06FF;
+}
+
+@font-face {
+  font-family: "3alamecom-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-bold.woff2") format("woff2");
+  unicode-range: U+0600-06FF;
+}
+
+/* apply 3alamecom font */
+body, main, h1, h2, h3, h4, h5, h6 {
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 300;
+}
+.font-default {
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 300;
+}
+.font-normal {
+  font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
+}
+.font-medium {
+  font-family: "3alamecom-medium", ui-sans-serif, system-ui, sans-serif;
+}
+.font-bold {
+  font-family: "3alamecom-bold", ui-sans-serif, system-ui, sans-serif;
+}
+
+/*── Vertical Block #1: “vertical-one” ──────────────────────────────────*/
+.vertical-one {
+  width: 100%;
+  height: 310px;        /* same as before */
+}
+.vertical-one-wrapper {
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.vertical-one-slide {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 310px;
+}
+
+/*── Vertical Block #2: “vertical-two” ──────────────────────────────────*/
+.vertical-two {
+  width: 100%;
+  height: 310px;
+}
+.vertical-two-wrapper {
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.vertical-two-slide {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  height: 310px;
+}
+
+/*── Statistics Block: “stats-carousel” ──────────────────────────────────*/
+.stats-carousel {
+  /* no fixed width/height; it will wrap content */
+}
+.stats-wrapper {
+  display: flex;            /* horizontal flex of all slides */
+  height: 300px;            /* same as your old .swiper-wrapper height */
+  gap: 32px;                /* spaceBetween: 32px */
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.stats-slide {
+  width: max-content;       /* same as .swiper-slide { width: max-content } */
+  /* margin-right: 32px can be replaced by gap above */
+}
+
+/*── Product Hero Block: “product-hero” ────────────────────────────────*/
+.product-hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.product-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  /* no fixed height, we'll let each .product-slide set its own min-height */
+}
+.product-slide {
+  width: 100%;
+  /* no need for height: max-content—it will size by its own content/background */
+}
+
+/* Scrollbar for Product Hero */
+.product-scrollbar {
+  width: 196px;   /* same as your old swiper-horizontal scrollbar width */
+  height: 2px;
+  background-color: #d1d5db;
+  bottom: 21px;
+}
+@media (max-width: 1003px) {
+  .product-scrollbar {
+    bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Overwrite default swiper-button pseudo-elements (since we’re not using them) */
+.product-button-prev:after,
+.product-button-next:after {
+  content: "";
+}
+
+/* Custom drag handle color for scrollbar */
+.product-scrollbar-drag {
+  width: 56px !important;
+  background: #818cf8;
+}
+
+/* Pagination styling */
+.product-pagination {
+  color: #9ca3af;  /* your “Colors-Prime-Gray-400” */
+  font-family: Manrope;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 46px;
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.product-pagination-current {
+  color: white;
+  font-family: Manrope;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+}
+
+/* Heading and card slider block */
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: '' !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: relative !important;
+    margin-top: 32px;
+}
+
+.swiper-slide.swiper-slide-active {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
+}
+
+.swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
