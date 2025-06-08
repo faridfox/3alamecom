@@ -148,7 +148,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // — Team section with opacity layout —
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   // Get all elements with the class 'hover-box'
   var hoverBoxes = document.querySelectorAll(".miror");
 
@@ -165,6 +165,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // Add mouseout event listener
     hoverBox.addEventListener("mouseover", function () {
       // Add the 'active' class to the current element
+      this.classList.add("flex-grow");
+    });
+  });
+});*/
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var hoverBoxes = document.querySelectorAll(".miror");
+
+  hoverBoxes.forEach(function (hoverBox) {
+    hoverBox.addEventListener("mouseover", function () {
+      // Remove 'flex-grow' from all
+      hoverBoxes.forEach(function (element) {
+        element.classList.remove("flex-grow");
+      });
+
+      // Add 'flex-grow' to the hovered one
       this.classList.add("flex-grow");
     });
   });
