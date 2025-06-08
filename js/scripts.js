@@ -170,19 +170,16 @@ var swiper = new Swiper(".mySwiper", {
   });
 });*/
 
+console.log("Script loaded"); // Debug check
+// scripts.js
+var hoverBoxes = document.querySelectorAll(".miror");
 
-document.addEventListener("DOMContentLoaded", function () {
-  var hoverBoxes = document.querySelectorAll(".miror");
-
-  hoverBoxes.forEach(function (hoverBox) {
-    hoverBox.addEventListener("mouseover", function () {
-      // Remove 'flex-grow' from all
-      hoverBoxes.forEach(function (element) {
-        element.classList.remove("flex-grow");
-      });
-
-      // Add 'flex-grow' to the hovered one
-      this.classList.add("flex-grow");
+hoverBoxes.forEach(function (hoverBox) {
+  hoverBox.addEventListener("mouseover", function () {
+    hoverBoxes.forEach(function (element) {
+      element.classList.remove("flex-grow");
     });
+    this.classList.add("flex-grow");
   });
 });
+
