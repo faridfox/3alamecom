@@ -4,7 +4,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-light.woff2")
+    format("woff2");
   unicode-range: U+0600-06FF;
 }
 
@@ -13,7 +14,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-medium.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-medium.woff2")
+    format("woff2");
   unicode-range: U+0600-06FF;
 }
 
@@ -22,12 +24,20 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-bold.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/faridfox/3alamecom@main/fonts/3alamecom-bold.woff2")
+    format("woff2");
   unicode-range: U+0600-06FF;
 }
 
 /* apply 3alamecom font */
-body, main, h1, h2, h3, h4, h5, h6 {
+body,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "3alamecom-light", ui-sans-serif, system-ui, sans-serif;
   font-weight: 300;
 }
@@ -48,12 +58,12 @@ body, main, h1, h2, h3, h4, h5, h6 {
 /* Heading and card slider block */
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-  content: '' !important;
+  content: "" !important;
 }
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: '' !important;
+  content: "" !important;
 }
 
 .swiper-button-next svg,
@@ -73,12 +83,30 @@ body, main, h1, h2, h3, h4, h5, h6 {
   border-color: rgb(79 70 229 / var(--tw-border-opacity)) !important;
 }
 
-.swiper-slide.swiper-slide-active>.swiper-slide-active\:text-indigo-600 {
+.swiper-slide.swiper-slide-active > .swiper-slide-active\:text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
-.swiper-slide.swiper-slide-active>.flex .grid .swiper-slide-active\:text-indigo-600 {
+.swiper-slide.swiper-slide-active
+  > .flex
+  .grid
+  .swiper-slide-active\:text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+
+/* Team section with opacity layout */
+.miror.flex-grow > .panel.miror\:opacity-100 {
+  opacity: 1;
+}
+.miror.flex-grow > .overlay.miror\:opacity-0 {
+  opacity: 0;
+}
+.miror.flex-grow > .panel .flex .block.miror\:transitranslate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }

@@ -146,3 +146,26 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// — Team section with opacity layout —
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all elements with the class 'hover-box'
+  var hoverBoxes = document.querySelectorAll(".miror");
+
+  // Loop through each hoverBox
+  hoverBoxes.forEach(function (hoverBox) {
+    // Add mouseover event listener
+    hoverBox.addEventListener("mouseover", function () {
+      // Remove the 'active' class from all elements with the class 'hover-box'
+      hoverBoxes.forEach(function (element) {
+        element.classList.remove("flex-grow");
+      });
+    });
+
+    // Add mouseout event listener
+    hoverBox.addEventListener("mouseover", function () {
+      // Add the 'active' class to the current element
+      this.classList.add("flex-grow");
+    });
+  });
+});
