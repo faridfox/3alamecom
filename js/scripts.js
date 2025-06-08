@@ -148,7 +148,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // — Team section with opacity layout —
-console.log("Script loaded new"); // Debug check
+console.log("Script loaded new 2"); // Debug check
 var hoverBoxes = document.querySelectorAll(".miror");
 hoverBoxes.forEach(function (hoverBox) {
   hoverBox.addEventListener("mouseover", function () {
