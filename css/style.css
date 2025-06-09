@@ -29,7 +29,7 @@
   unicode-range: U+0600-06FF;
 }
 
-/* apply 3alamecom font */
+/* Apply 3alamecom font */
 body,
 main,
 h1,
@@ -53,6 +53,14 @@ h6 {
 }
 .font-bold {
   font-family: "3alamecom-bold", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Forced custom Tailwind CSS styles for built-in blocks */
+@media (min-width: 768px) {
+  span.md\:grow.md\:ml-5 {
+    margin-right: unset;
+    margin-left: 1.25rem;
+  }
 }
 
 /* Heading and card slider block */
