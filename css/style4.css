@@ -51,8 +51,10 @@ h6 {
 .font-medium {
   font-family: "3alamecom-medium", ui-sans-serif, system-ui, sans-serif;
 }
+.font-semibold,
 .font-bold {
   font-family: "3alamecom-bold", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
 }
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
