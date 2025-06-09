@@ -58,8 +58,8 @@ h6 {
 /* Forced custom Tailwind CSS styles for built-in blocks */
 @media (min-width: 768px) {
   span.md\:grow.md\:ml-5 {
-    margin-right: unset;
-    margin-left: 1.25rem;
+    margin-left: unset;
+    margin-right: 1.25rem;
   }
 }
 
