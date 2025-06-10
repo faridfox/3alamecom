@@ -58,8 +58,19 @@ h6 {
 }
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .custom .md\:ml-5 {
+    margin-left: unset;
+    margin-right: 1.25rem;
+  }
+}*/
+
+[lindo-section="_block_cn6g9593"] {
+  background-color: var(--bg-primary-100);
+}
+
+@media (min-width: 768px) {
+  [lindo-section="_feature_i6104"] .md\:ml-5 {
     margin-left: unset;
     margin-right: 1.25rem;
   }
