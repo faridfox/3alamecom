@@ -65,8 +65,8 @@ h6 {
   }
 }*/
 
-[lindo-section="_block_cn6g9593"] {
-  background-color: var(--bg-primary-100);
+[lindo-section="_block_cn6g9593"] > nav {
+  background-color: #DBEAFE;
 }
 
 @media (min-width: 768px) {
