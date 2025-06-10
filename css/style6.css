@@ -65,8 +65,12 @@ h6 {
   }
 }*/
 
-[lindo-section="_block_cn6g7482"] nav {
-  background-color: #DBEAFE;
+[lindo-section="_header_d2779"] nav {
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+}
+
+[lindo-section="_header_d2779"] [lindo-btn="_header_d2779_login"]:focus {
+  --tw-ring-offset-color: #eff6ff;
 }
 
 @media (min-width: 768px) {
