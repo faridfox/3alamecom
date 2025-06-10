@@ -66,6 +66,7 @@ h6 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 [lindo-section="_header_d2779"] [lindo-btn="_header_d2779_login"]:focus {
