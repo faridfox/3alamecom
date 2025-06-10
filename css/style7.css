@@ -58,13 +58,6 @@ h6 {
 }
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
-/*@media (min-width: 768px) {
-  .custom .md\:ml-5 {
-    margin-left: unset;
-    margin-right: 1.25rem;
-  }
-}*/
-
 [lindo-section="_header_d2779"] nav {
   background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
 }
@@ -242,9 +235,4 @@ h6 {
   #exitButton {
     font-size: 3em;
   }
-}
-
-
-.test {
-  display: none;
 }
