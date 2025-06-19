@@ -1,6 +1,6 @@
 /* 3alamecom font */
 @font-face {
-  font-family: 3alamecom;
+  font-family: "3alamecom";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 3alamecom;
+  font-family: "3alamecom";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: 3alamecom;
+  font-family: "3alamecom";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -38,24 +38,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 3alamecom, ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom", ui-sans-serif, system-ui, sans-serif;
   font-weight: 300;
 }
 .font-default {
-  font-family: 3alamecom, ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom", ui-sans-serif, system-ui, sans-serif;
   font-weight: 300;
 }
 .font-normal {
-  font-family: 3alamecom, ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom", ui-sans-serif, system-ui, sans-serif;
   font-weight: 300;
 }
 .font-medium {
-  font-family: 3alamecom, ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom", ui-sans-serif, system-ui, sans-serif;
   font-weight: 500;
 }
 .font-semibold,
 .font-bold {
-  font-family: 3alamecom, ui-sans-serif, system-ui, sans-serif;
+  font-family: "3alamecom", ui-sans-serif, system-ui, sans-serif;
   font-weight: 700;
 }
 
