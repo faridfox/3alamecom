@@ -50,14 +50,18 @@ body, main, h1, h2, h3, h4, h5, h6 {
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
 nav {
-  /*background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));*/
-  /* Glass Morphissm effect From https://css.glass */
-  background: rgba(255, 255, 255, 0.14);
-  border-radius: 16px;
+  /*background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
+  *//*GlassMorphissmeffectFromhttps:;
+  //css.glass*/background: rgba(255, 255, 255, 0.14);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(13.4px);
   -webkit-backdrop-filter: blur(13.4px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem !important;
+  -webkit-border-radius: 1rem !important;
+  -moz-border-radius: 1rem !important;
+  -ms-border-radius: 1rem !important;
+  -o-border-radius: 1rem !important;
 }
 
 [lindo-btn="_header_d2779_login"]:focus {
