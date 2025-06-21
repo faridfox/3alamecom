@@ -49,7 +49,7 @@ body, main, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
-nav {
+header nav {
   /*background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
   *//*GlassMorphissmeffectFromhttps:;
   //css.glass*/background: rgba(255, 255, 255, 0.14);
