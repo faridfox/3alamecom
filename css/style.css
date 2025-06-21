@@ -49,7 +49,7 @@ body, main, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Forced custom Tailwind CSS styles for built-in blocks */
-.navbar nav {
+nav {
   /*background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));*/
   /* Glass Morphissm effect From https://css.glass */
   background: rgba(255, 255, 255, 0.14);
@@ -60,7 +60,7 @@ body, main, h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.navbar [lindo-btn="_header_d2779_login"]:focus {
+[lindo-btn="_header_d2779_login"]:focus {
   --tw-ring-offset-color: #eff6ff;
 }
 
