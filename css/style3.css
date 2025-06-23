@@ -81,6 +81,10 @@ header nav {
     padding-right: 1.25rem;
   }
 }
+
+[lindo-section="_block_o16q2163"] div {
+  max-width: 100% !important;
+}
 /* */
 
 /* Heading and card slider block */
